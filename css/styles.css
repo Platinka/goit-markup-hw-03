@@ -1,0 +1,226 @@
+/* Main page styles */
+
+/*fonts & colours*/
+:root {
+  /*fonts*/
+  --main-font: 'Roboto', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
+
+  /* text colors */
+  --main-text-color: #212121;
+  --content--text-color: #757575;
+  --selected-text-color: #2196f3;
+  --light-text-color: #ffffff;
+  --dark-text-color: #000000;
+
+  /* background colors */
+  --main-bg-color: #2f303a;
+  --button-bg-main-color: #2196f3;
+  --button-bg-secondary-color: #f5f4fa;
+}
+
+/*main text style*/
+body {
+  font-family: var(--main-font);
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+
+  color: var(--main-text-color);
+}
+
+/*link general style settings*/
+.logo,
+.header-navigation-link,
+.header-contacts-link,
+.address-list-link {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+.header-navigation-link:hover,
+.header-contacts-link:hover,
+.address-list-link:hover {
+  color: var(--selected-text-color);
+}
+
+.header-contacts-link:focus,
+.address-list-link:focus {
+  color: var(--selected-text-color);
+}
+
+/*button general style settings*/
+.front-btn,
+.filters-btn {
+  font-family: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+/*list style reset*/
+.header-navigation-list,
+.header-contacts,
+.benefits-list,
+.activity-list,
+.team-list,
+.address-list,
+.filters-list,
+.projects-list,
+.projects-row-list {
+  list-style-type: none;
+  text-indent: 0;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Header */
+.logo {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  color: var(--selected-text-color);
+}
+
+.dark-text {
+  color: var(--dark-text-color);
+}
+
+.header-navigation-link,
+.header-contacts-link {
+  font-weight: 500;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+}
+
+.header-contacts-link {
+  color: var(--content--text-color);
+}
+
+/* Front section */
+.front {
+  background-color: var(--main-bg-color);
+}
+
+.front-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: calc(60 / 44);
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--light-text-color);
+}
+
+.front-btn {
+  background-color: var(--button-bg-main-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--light-text-color);
+}
+
+/* Benefits */
+.benefits-item-title {
+  font-weight: 700;
+  font-size: inherit;
+  line-height: calc(16 / 14);
+  text-transform: uppercase;
+}
+
+.benefits-item-content {
+  line-height: calc(24 / 14);
+  color: var(--content--text-color);
+}
+
+/* Activity */
+.activity-title,
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+}
+
+/* Team */
+.team-member-name,
+.team-member-position {
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  text-align: center;
+}
+
+.team-member-name {
+  font-weight: 500;
+}
+
+.team-member-position {
+  color: var(--content--text-color);
+}
+
+/* Footer */
+.footer {
+  background-color: var(--main-bg-color);
+}
+
+.light-text {
+  color: var(--light-text-color);
+}
+
+.address {
+  font-style: inherit;
+}
+
+.address-physical {
+  line-height: calc(24 / 14);
+  color: var(--light-text-color);
+}
+
+.address-list-link {
+  line-height: calc(24 / 14);
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Portfolio page */
+.filters-btn {
+  background-color: var(--button-bg-secondary-color);
+  border-radius: 4px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  text-align: center;
+  letter-spacing: inherit;
+  color: inherit;
+}
+
+.filters-btn:hover {
+  background-color: var(--button-bg-main-color);
+  color: var(--light-text-color);
+}
+
+.project-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: calc(36 / 18);
+  letter-spacing: 0.06em;
+}
+
+.project-content {
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  color: var(--content--text-color);
+}
+
+/* Active page styling */
+.active {
+  color: var(--selected-text-color);
+}
