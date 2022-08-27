@@ -73,6 +73,11 @@ body {
   padding: 0;
 }
 
+/*text margins reset*/
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
 /*common clases*/
 .container {
   width: 1600px;
@@ -214,6 +219,10 @@ body {
   justify-content: center;
 }
 
+.activity-item-img {
+  display: block;
+}
+
 .activity-item:not(:last-child) {
   margin-right: 30px;
 }
@@ -294,6 +303,11 @@ body {
 }
 
 /* Portfolio page */
+.portfolio {
+  padding-right: 215px;
+  padding-left: 215px;
+}
+
 .filters-list {
   display: flex;
   justify-content: center;
@@ -330,11 +344,15 @@ body {
 }
 
 .projects-grid-item {
+  /* border: 1px solid #EEEEEE; */
   flex-basis: calc((100% - 60px) / 3);
 }
 
 .project-img {
+  display: block;
   margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .project-title {
