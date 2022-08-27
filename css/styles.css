@@ -276,6 +276,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .footer-logo {
+  display: block;
   margin-bottom: 20px;
 }
 
@@ -353,6 +354,11 @@ h1, h2, h3, h4, h5, h6, p {
   margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.project-description {
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 .project-title {
